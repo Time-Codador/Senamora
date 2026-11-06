@@ -21,8 +21,11 @@ Organização do Time
 O desenvolvimento do projeto é dividido e gerenciado via GitHub Projects pela seguinte equipe:
 
 Enzo Kawakami: Responsável pelo desenvolvimento e lógica do algoritmo de correspondência e regras de negócio (Backend).
+
 Matheus Doom: Responsável pelo design visual da interface, identidade do projeto e desenvolvimento das telas do site (Frontend).
+
 Paola: Responsável pela estruturação, estilização e desenvolvimento das telas e experiência do usuário (Frontend).
+
 Wendell: Responsável pela arquitetura, segurança do sistema, gerenciamento do banco de dados e automação do deploy (Banco de Dados & DevOps).
 
 
