@@ -1,0 +1,265 @@
+/* ==========================================================================
+   1. CONFIGURAÇÕES GERAIS E RESETS
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   2. HEADER / HERO SECTION
+   ========================================================================== */
+.hero-section {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.hero-section h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   3. SEÇÃO DE PERFIL / CADASTRO (Fundo Branco)
+   ========================================================================== */
+.profile-registration {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-upload {
+    background-color: #fff0f2;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ff416c;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.form-fields {
+    width: 100%;
+}
+
+.form-fields p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   4. LISTA DE USUÁRIOS PREMIUM (Fundo Escuro)
+   ========================================================================== */
+.premium-users {
+    background-color: #111111; /* Fundo escuro visível */
+    color: #fff;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-row {
+    background-color: #222222;
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-left: 4px solid #ffbc00;
+}
+
+.thumb {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #444; /* Cor caso a foto 'user1.jpg' não exista */
+}
+
+/* ==========================================================================
+   5. SEÇÃO DE MATCH / CONEXÃO (Fundo Azul)
+   ========================================================================== */
+.match-section {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Azul degradê forte */
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.match-grid {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Garante tamanho e cor para os blocos de foto aparecerem */
+.user-photo {
+    width: 120px;
+    height: 160px;
+    background-color: #e2e8f0; 
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.user-photo.empty {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px dashed rgba(255, 255, 255, 0.6);
+}
+
+.match-arrows {
+    font-size: 32px;
+    color: #fff;
+}
+
+/* ==========================================================================
+   6. ÁREA DE CHAT / MENSAGENS
+   ========================================================================== */
+.chat-section {
+    background-color: #f8fafc;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.chat-bubble {
+    padding: 12px 18px;
+    border-radius: 20px;
+    max-width: 75%;
+    font-size: 15px;
+}
+
+.chat-bubble.left {
+    background-color: #e2e8f0;
+    align-self: flex-start;
+    border-bottom-left-radius: 5px;
+}
+
+.chat-bubble.right {
+    background-color: #ff416c;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 5px;
+}
+
+/* ==========================================================================
+   7. SEÇÃO DE INDICAÇÕES / REDES SOCIAIS (Fundo Vinho)
+   ========================================================================== */
+.social-recommendations {
+    background-color: #5c0612; /* Cor Vinho visível */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* ==========================================================================
+   8. DEPOIMENTOS E AVALIAÇÕES (Cards Pretos)
+   ========================================================================== */
+.testimonials-section {
+    background-color: #f1f5f9;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-card {
+    background-color: #111111;
+    color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.testimonial-card .stars {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: #cbd5e1;
+}
+
+/* ==========================================================================
+   9. RODAPÉ (Fundo Azul Escuro)
+   ========================================================================== */
+.app-footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: #ff416c;
+}
+
+/* ==========================================================================
+   10. RESPONSIVIDADE
+   ========================================================================== */
+@media (min-width: 768px) {
+    .profile-registration {
+        flex-direction: row;
+        padding: 40px;
+    }
+}
