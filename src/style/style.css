@@ -91,7 +91,7 @@ body {
 .premium-users {
     background-color: #111111; /* Fundo escuro visível */
     color: #fff;
-    padding: 50px 20px;
+    padding: 15px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,7 +105,8 @@ body {
     padding: 15px;
     border-radius: 10px;
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
     gap: 15px;
     border-left: 4px solid #ffbc00;
 }
