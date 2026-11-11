@@ -3,6 +3,7 @@ package com.senai.senamora.Entity;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "Usuarios")
 public class Usuario {
 
     @Id
